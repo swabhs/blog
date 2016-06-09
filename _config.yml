@@ -9,11 +9,11 @@
 
 # Site settings
 title: Swabha's blog
-email: <my first name> @ cs.cmu.edu
+email: myfirstname @ cs.cmu.edu
 description: > # this means to ignore newlines until "baseurl:"
-    I am a PhD student at the Carnegie Mellon School of Computer Science. I work on Natural Language Processing. Learning and inference for structured objects fascinates me, especially if the structures deal with semantic formalisms. I created this site to ramble about things I'm reading and learning about, because human memory is limited...
+    Blogging because human memory is limited...
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://swabhs.github.io" # the base hostname & protocol for your site
 twitter_username: swabzzzz
 github_username:  swabhs
 
