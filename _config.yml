@@ -11,10 +11,10 @@
 title: Swabha's blog
 email: myfirstname @ cs.cmu.edu
 description: > # this means to ignore newlines until "baseurl:"
-    Blogging because human memory is limited...
+    Because human memory is limited...
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://swabhs.github.io" # the base hostname & protocol for your site
-twitter_username: swabzzzz
+twitter_username: swabhz
 github_username:  swabhs
 
 # Build settings
