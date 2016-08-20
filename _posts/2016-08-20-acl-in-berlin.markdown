@@ -5,7 +5,6 @@ date:   2016-08-20 14:55:35 -0700
 categories: jekyll update
 ---
 
-
 The ACL this year was great. Though there were too many parallel sessions at times and though I had to spend some time preparing/changing my own talk, I still managed to attend some really great talks.
 
 Overarching themes: Distributional semantics was a big thing this year. This could be subjective, based on the sessions and talks I attended.
@@ -14,7 +13,7 @@ Finally, this ACL was a strong indicator that the community is thinking about ge
 
 ---
 
-## Day 1 [Aug 8th]
+## Day 1 : 8th Aug
 
 ### Keynote Talk 1: Amber Boydstun
 
@@ -49,7 +48,7 @@ Framing in politics and statistical analysis of change in public opinion based o
 
     Blanking out on this one.
 
-- [Morpho-syntactic Lexicon Generation Using Graph-based Semi-supervised Learning] () (TACL)
+- [Morpho-syntactic Lexicon Generation Using Graph-based Semi-supervised Learning]() (TACL)
     * Manaal Faruqui, Ryan McDonald and Radu Soricut
 
     Started with a small sample lexicon and extended it to a large corpus using projection. Seems practically useful.
@@ -168,31 +167,37 @@ Fascinating talk. I’m a big sucker for anything involving language and human p
 
 ---
 
-## Day 5[11th Aug]
+## Day 5: 11th Aug
 
 ### Keynote Talk 7: RNNaissance
 [Jürgen Schmidhuber]
 
 Grand talk, started with a history of neural nets and the LSTM, cited a lot of previous work and ended with grand promises of artificial intelligence leading to singularity 😃 Interestingly, the name long short-term memory comes from biological short-term memories.
 
-- Exploring Prediction Uncertainty in Machine Translation Quality Estimation
-[Daniel Beck, Lucia Specia1, Trevor Cohn]
+- [Exploring Prediction Uncertainty in Machine Translation Quality Estimation]()
+    * Daniel Beck, Lucia Specia1, Trevor Cohn
 
-- Learning when to trust distant supervision: An application to low-resource POS tagging using cross-lingual projection
-Meng Fang and Trevor Cohn
+    This was a good one, but I was nervous, so I barely understood.
 
--  Greedy, Joint Syntactic-Semantic Parsing with Stack LSTMs <3
-Swabha Swayamdipta, Miguel Ballesteros, Chris Dyer, Noah A. Smith
+- [Learning when to trust distant supervision: An application to low-resource POS tagging using cross-lingual projection]()
+    * Meng Fang and Trevor Cohn
 
-My talk went pretty well, actually. Had quite a large attendance and a fun question-answering session.
+    Apparently LSTMs don't help much!
 
-- Beyond Prefix-Based Interactive Translation Prediction
-[Jesús González-Rubio, Daniel Ortiz Martinez, Francisco Casacuberta, Jose Miguel Benedi Ruiz]
+- [Greedy, Joint Syntactic-Semantic Parsing with Stack LSTMs]() 
+    * **Swabha Swayamdipta**, Miguel Ballesteros, Chris Dyer, Noah A. Smith
 
-Had a strange claim : instead of translating as the sentence is seen from left to right, this work claimed that interactive translation quality is better when the entire sentence is seen.
+    My talk went pretty well, actually. Had quite a large attendance and a fun question-answering session with Lluis Marquez, Haagen Fursteneau, James Henderson and Trevor Cohn.
 
-- Cross-Lingual Named Entity Recognition via Wikification
-[Chen-Tse Tsai, Stephen Mayhew, Dan Roth]
+- [Beyond Prefix-Based Interactive Translation Prediction]()
+    * Jesús González-Rubio, Daniel Ortiz Martinez, Francisco Casacuberta, Jose Miguel Benedi Ruiz
+
+    Had a strange claim : instead of translating as the sentence is seen from left to right, this work claimed that interactive translation quality is better when the entire sentence is seen.
+
+- [Cross-Lingual Named Entity Recognition via Wikification]()
+    * Chen-Tse Tsai, Stephen Mayhew, Dan Roth
+
+    Too many technical difficulties.
 
 At the end of the day, I snuck into the open discussion at the Word Vector evaluation workshop. Felix Hill opened that session with a long description of the questions he believed the community should be discussing. The most interesting(very subjectively) that was brought up was the lack of shared tasks, which has spurred development in other communities. I think most people agreed with the need to continue this workshop over the next few years.
 
@@ -206,4 +211,8 @@ At the end of the day, I snuck into the open discussion at the Word Vector evalu
 
 # What’s on my reading list:
 
-I also tweeted a bunch during the conference, and got retweeted by Hal Daumé! [Here](http://nlpers.blogspot.in/2016/08/some-papers-i-liked-at-acl-2016.html) is his own blog post about the ACL talks he liked.
+1. dkjfldf
+2. jfdljfjdf
+44. jfldjf;lkdjf
+
+I also tweeted a bunch during the conference, and got retweeted by Hal Daumé  ! [Here](http://nlpers.blogspot.in/2016/08/some-papers-i-liked-at-acl-2016.html) is his own blog post about the ACL talks he liked.
