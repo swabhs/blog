@@ -24,7 +24,7 @@ Framing in politics and statistical analysis of change in public opinion based o
 * [Noise reduction and targeted exploration in imitation learning for Abstract Meaning Representation parsing](https://aclweb.org/anthology/P/P16/P16-1001.pdf)
     - James Goodman, Andreas Vlachos and Jason Naradowsky
 
-    Explained the concepts behind roll-in and roll-out. Glad they selected AMR parsing. SEARN and Dagger-style algorithms for doing similar kinds of search during training and testing.
+    Explained the concepts behind roll-in and roll-out. Glad they selected AMR parsing. SEARN and DAgger-style algorithms for doing similar kinds of search during training and testing.
 
 * [Generalized Transition-based Dependency Parsing via Control Parameters](https://www.aclweb.org/anthology/P/P16/P16-1015.pdf)
     - Bernd Bohnet, Ryan McDonald, Emily Pitler and Ji Ma
@@ -43,7 +43,7 @@ Framing in politics and statistical analysis of change in public opinion based o
 
 ### Session 2
 
-- [Active Learning for Dependency Parsing with Partial Annotation]()
+- [Active Learning for Dependency Parsing with Partial Annotation](http://www.aclweb.org/anthology/P/P16/P16-1033.pdf)
     * Zhenghua Li, Min Zhang, Yue Zhang, Zhanyi Liu, Wenliang Chen, Hua Wu and Haifeng Wang
 
     Blanking out on this one.
@@ -53,12 +53,12 @@ Framing in politics and statistical analysis of change in public opinion based o
 
     Started with a small sample lexicon and extended it to a large corpus using projection. Seems practically useful.
 
-- [News Citation Recommendation with Implicit and Explicit Semantics]()
+- [News Citation Recommendation with Implicit and Explicit Semantics](http://www.aclweb.org/anthology/P/P16/P16-1037.pdf)
     * Hao Peng, Jing Liu and Chin-Yew Lin
 
     Went to check out the newest ARK member, he seems to be doing very well, he’s prepared for what’s to come!
 
-- [Document-level Sentiment Inference with Social, Faction, and Discourse Context]()
+- [Document-level Sentiment Inference with Social, Faction, and Discourse Context](http://www.aclweb.org/anthology/P/P16/P16-1029.pdf)
     * Eunsol Choi, Hannah Rashkin, Luke Zettlemoyer and Yejin Choi
 
     Theories about relationships between entities, like friends of enemies are enemies, were empirically justified from text data. Involved complex annotation schemes and guidelines (I annotated!)
@@ -71,7 +71,7 @@ Framing in politics and statistical analysis of change in public opinion based o
 
     Same style of projection as was used by Dipanjan and others at Google.
 
-- [Combining Natural Logic and Shallow Reasoning for Question Answering]()
+- [Combining Natural Logic and Shallow Reasoning for Question Answering](http://www.aclweb.org/anthology/P/P16/P16-1042.pdf)
     * Gabor Angeli, Neha Nayak and Christopher D. Manning
 
 
@@ -109,27 +109,27 @@ Denotational semantics equates to logical semantics, building knowledge graphs, 
 
 ### Outstanding Papers Session I and II
 
-- [A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task]()
+- [A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task](http://www.aclweb.org/anthology/P/P16/P16-1223.pdf)
     * Danqi Chen, Jason Bolton and Christopher D. Manning
 
     Simple methods for reading comprehension work, so the work involved detailed analysis of the dataset to show patterns in the data that kind of undermine the task.
 
-- [Learning Language Games through Interaction]()
+- [Learning Language Games through Interaction](http://www.aclweb.org/anthology/P/P16/P16-1224.pdf)
     * Sida I. Wang, Percy Liang and Christopher D. Manning
 
     Learn from interaction rather than supervision. Outlined the necessity of better user interaction to teach machines well, the users who gave consistent commands taught the systems better, even if it was not in a real language.
 
-- [Finding Non-Arbitrary Form-Meaning Systematicity Using String-Metric Learning for Kernel Regression]()
+- [Finding Non-Arbitrary Form-Meaning Systematicity Using String-Metric Learning for Kernel Regression](http://www.aclweb.org/anthology/P/P16/P16-1225.pdf)
     * E.Dario Gutierrez, Roger Levy and Benjamin Bergen {WON best paper award}
 
     Correlations between word meaning and word form. These seem arbitrary at first glance, but actually follow patterns in the corpus. Specially interesting are phonaesthemes. Used distributional models to confirm local phono semantic hypotheses. The mapping is found using supervised learning, non-parametric kernel regression, in particular.
 
-- [On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems]()
+- [On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems](https://www.aclweb.org/anthology/P/P16/P16-1230.pdf)
     * Pei-Hao Su, Milica Gasic, Nikola Mrkšić, Lina M. Rojas Barahona, Stefan Ultes, David Vandyke, Tsung-Hsien Wen and Steve Young {WON best student paper award}
 
     Instead of just awarding static rewards, learn the rewards to associate with different methods.
 
-- [Globally Normalized]()
+- [Globally Normalized Transition-Based Neural Networks](https://www.aclweb.org/anthology/P/P16/P16-1231.pdf)
     * Daniel Andor, Chris Alberti, David Weiss, Aliaksei Severyn, Alessandro Presta, Kuzman Ganchev, Slav Petrov and Michael Collins
 
     Feed-forward nets with global normalization obviate the need for looking forward into the rest of the sentence(dump the buffer).
@@ -174,8 +174,9 @@ Fascinating talk. I’m a big sucker for anything involving language and human p
 
 Grand talk, started with a history of neural nets and the LSTM, cited a lot of previous work and ended with grand promises of artificial intelligence leading to singularity 😃 Interestingly, the name long short-term memory comes from biological short-term memories.
 
+<!--
 - [Exploring Prediction Uncertainty in Machine Translation Quality Estimation]()
-    * Daniel Beck, Lucia Specia1, Trevor Cohn
+    * Daniel Beck, Lucia Specia, Trevor Cohn
 
     This was a good one, but I was nervous, so I barely understood.
 
@@ -183,12 +184,13 @@ Grand talk, started with a history of neural nets and the LSTM, cited a lot of p
     * Meng Fang and Trevor Cohn
 
     Apparently LSTMs don't help much!
-
+-->
 - [Greedy, Joint Syntactic-Semantic Parsing with Stack LSTMs]() 
     * **Swabha Swayamdipta**, Miguel Ballesteros, Chris Dyer, Noah A. Smith
 
     My talk went pretty well, actually. Had quite a large attendance and a fun question-answering session with Lluis Marquez, Haagen Fursteneau, James Henderson and Trevor Cohn.
 
+<!--
 - [Beyond Prefix-Based Interactive Translation Prediction]()
     * Jesús González-Rubio, Daniel Ortiz Martinez, Francisco Casacuberta, Jose Miguel Benedi Ruiz
 
@@ -198,6 +200,7 @@ Grand talk, started with a history of neural nets and the LSTM, cited a lot of p
     * Chen-Tse Tsai, Stephen Mayhew, Dan Roth
 
     Too many technical difficulties.
+-->
 
 At the end of the day, I snuck into the open discussion at the Word Vector evaluation workshop. Felix Hill opened that session with a long description of the questions he believed the community should be discussing. The most interesting(very subjectively) that was brought up was the lack of shared tasks, which has spurred development in other communities. I think most people agreed with the need to continue this workshop over the next few years.
 
@@ -205,9 +208,20 @@ At the end of the day, I snuck into the open discussion at the Word Vector evalu
 
 # Some talks I missed out on:
 
-- Kiperwasser and Goldberg : Bilstm for features of words, then mlp of head/modifier to score possible dependency attachment.  MST on top.  Also used in greedy incremental parsing. Nice results.
-- Zhang and Weiss : The stack-propagation paper in the same session, by Zhang and Weiss, is also interesting.  Could imagine this being useful in syntax/semantics models (they applied it to POS/syntax).
-- Rashkin, and Choi :
+- [Simple and Accurate Dependency Parsing Using Bidirectional LSTM Feature Representations](http://arxiv.org/pdf/1603.04351.pdf)
+    * Eliyahu Kiperwasser and Yoav Goldberg
+
+    Bilstm for features of words, then mlp of head/modifier to score possible dependency attachment.  MST on top.  Also used in greedy incremental parsing. Nice results.
+
+- [Stack-propagation: Improved Representation Learning for Syntax](http://www.aclweb.org/anthology/P/P16/P16-1147.pdf)
+    * Yuan Zhang and David Weiss
+    
+    Could imagine this being useful in syntax/semantics models (they applied it to POS/syntax).
+
+- [Document-level Sentiment Inference with Social, Faction, and Discourse Context](http://www.aclweb.org/anthology/P/P16/P16-1032.pdf)
+    * Hannah Rashkin and Sameer Singh and Yejin Choi
+
+    //todo: need to check out
 
 # What’s on my reading list:
 
@@ -215,4 +229,4 @@ At the end of the day, I snuck into the open discussion at the Word Vector evalu
 2. jfdljfjdf
 44. jfldjf;lkdjf
 
-I also tweeted a bunch during the conference, and got retweeted by Hal Daumé  ! [Here](http://nlpers.blogspot.in/2016/08/some-papers-i-liked-at-acl-2016.html) is his own blog post about the ACL talks he liked.
+I also tweeted a bunch during the conference, and got retweeted by Hal Daumé  ! [Here is his own blog post](http://nlpers.blogspot.in/2016/08/some-papers-i-liked-at-acl-2016.html) about the ACL talks he liked.
