@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "ACL 2016 in Berlin"
+title:  "ACL in Berlin"
 date:   2016-08-20 14:55:35 -0700
-categories: conferences
+categories: jekyll update
 ---
+
+
 The ACL this year was great. Though there were too many parallel sessions at times and though I had to spend some time preparing/changing my own talk, I still managed to attend some really great talks.
 
 Overarching themes: Distributional semantics was a big thing this year. This could be subjective, based on the sessions and talks I attended.
