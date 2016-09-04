@@ -1,11 +1,9 @@
-<!--
 ---
 layout: post
 title:  "ACL in Berlin"
 date:   2016-08-20 14:55:35 -0700
 categories: jekyll update
 ---
--->
 
 
 The ACL this year was great. Though there were too many parallel sessions at times and though I had to spend some time preparing/changing my own talk, I still managed to attend some really great talks.
