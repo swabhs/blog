@@ -1,9 +1,12 @@
+<!--
 ---
 layout: post
 title:  "ACL in Berlin"
 date:   2016-08-20 14:55:35 -0700
 categories: jekyll update
 ---
+-->
+
 
 The ACL this year was great. Though there were too many parallel sessions at times and though I had to spend some time preparing/changing my own talk, I still managed to attend some really great talks.
 
@@ -24,22 +27,24 @@ Framing in politics and statistical analysis of change in public opinion based o
 * [Noise reduction and targeted exploration in imitation learning for Abstract Meaning Representation parsing](https://aclweb.org/anthology/P/P16/P16-1001.pdf)
     - James Goodman, Andreas Vlachos and Jason Naradowsky
 
-    Explained the concepts behind roll-in and roll-out. Glad they selected AMR parsing. SEARN and DAgger-style algorithms for doing similar kinds of search during training and testing.
+    Explained the concepts behind roll-in and roll-out. Glad they selected AMR parsing. SEARN and DAgger-style algorithms for doing similar kinds of search during training and testing. // todo:read
 
 * [Generalized Transition-based Dependency Parsing via Control Parameters](https://www.aclweb.org/anthology/P/P16/P16-1015.pdf)
     - Bernd Bohnet, Ryan McDonald, Emily Pitler and Ji Ma
 
-    Completely blanking out on this talk. //todo: read abstract and possibly the paper to summarize.
+    Completely blanking out on this talk. //todo:read
 
 * [Learning the Curriculum with Bayesian Optimization for Task-Specific Word Representation Learning](https://www.aclweb.org/anthology/P/P16/P16-1013.pdf)
     - Yulia Tsvetkov, Manaal Faruqui, Wang Ling, Brian MacWhinney and Chris Dyer
 
     Instead of having a random order of examples, learn the best order from samples provided. This is curriculum learning, where the curriculum is controlled by specific hyper parameters, which are learnt using Bayesian optimization. They demonstrate results on multiple tasks, including parsing, which is cool and not seen so often.
+    // todo:abstract+intro
 
 * [Named Entity Recognition with Bidirectional LSTM-CNNs](http://arxiv.org/abs/1511.08308) (TACL)
     - Jason P.C. Chiu and Eric Nichols
 
     Boring.
+    // todo:abstract+intro
 
 ### Session 2
 
@@ -47,50 +52,57 @@ Framing in politics and statistical analysis of change in public opinion based o
     * Zhenghua Li, Min Zhang, Yue Zhang, Zhanyi Liu, Wenliang Chen, Hua Wu and Haifeng Wang
 
     Blanking out on this one.
+    // todo:abstract+intro
 
 - [Morpho-syntactic Lexicon Generation Using Graph-based Semi-supervised Learning]() (TACL)
     * Manaal Faruqui, Ryan McDonald and Radu Soricut
 
     Started with a small sample lexicon and extended it to a large corpus using projection. Seems practically useful.
+    // todo:abstract+intro
 
 - [News Citation Recommendation with Implicit and Explicit Semantics](http://www.aclweb.org/anthology/P/P16/P16-1037.pdf)
     * Hao Peng, Jing Liu and Chin-Yew Lin
 
     Went to check out the newest ARK member, he seems to be doing very well, he’s prepared for what’s to come!
+    // todo:abstract+intro
 
 - [Document-level Sentiment Inference with Social, Faction, and Discourse Context](http://www.aclweb.org/anthology/P/P16/P16-1029.pdf)
     * Eunsol Choi, Hannah Rashkin, Luke Zettlemoyer and Yejin Choi
 
     Theories about relationships between entities, like friends of enemies are enemies, were empirically justified from text data. Involved complex annotation schemes and guidelines (I annotated!)
+    // todo:abstract+intro
 
 ### Session 3
 
 - [Multilingual Projection for Parsing Truly Low-Resource Languages]() (TACL)
     * Željko Agić, Anders Johannsen, Barbara Plank, Héctor Martínez Alonso, Natalie Schluter and Anders Søgaard
 
-
     Same style of projection as was used by Dipanjan and others at Google.
+    // todo:abstract+intro
 
 - [Combining Natural Logic and Shallow Reasoning for Question Answering](http://www.aclweb.org/anthology/P/P16/P16-1042.pdf)
     * Gabor Angeli, Neha Nayak and Christopher D. Manning
 
-
     clever trick which he proved using a sample logic puzzle, nice talk
+    // todo:abstract+intro
 
 - [Many Languages, One Parser]() (TACL)
     * Waleed Ammar, George Mulcaire, Miguel Ballesteros, Chris Dyer and Noah A. Smith
 
     may be not really low resource, as per Emily Bender
+    // todo:abstract+intro
 
 - [Unsupervised Part-Of-Speech Tagging with Anchor Hidden Markov Models]() (TACL)
     * Karl Stratos, Michael Collins and Daniel Hsu
 
     anchor HMMs, good but do the properties generalize?
+    //todo:read
 
 - [Multi-lingual dependency parsing evaluation: a large-scale analysis of word order properties using artificial datai]() (TACL)
     * Kristina Gulordava and Paola Merlo
 
     the talk was painful to watch
+    // todo:abstract+intro
 
 ---
 
@@ -113,26 +125,31 @@ Denotational semantics equates to logical semantics, building knowledge graphs, 
     * Danqi Chen, Jason Bolton and Christopher D. Manning
 
     Simple methods for reading comprehension work, so the work involved detailed analysis of the dataset to show patterns in the data that kind of undermine the task.
+    // todo:abstract+intro
 
 - [Learning Language Games through Interaction](http://www.aclweb.org/anthology/P/P16/P16-1224.pdf)
     * Sida I. Wang, Percy Liang and Christopher D. Manning
 
     Learn from interaction rather than supervision. Outlined the necessity of better user interaction to teach machines well, the users who gave consistent commands taught the systems better, even if it was not in a real language.
+    // todo:abstract+intro
 
 - [Finding Non-Arbitrary Form-Meaning Systematicity Using String-Metric Learning for Kernel Regression](http://www.aclweb.org/anthology/P/P16/P16-1225.pdf)
     * E.Dario Gutierrez, Roger Levy and Benjamin Bergen {WON best paper award}
 
     Correlations between word meaning and word form. These seem arbitrary at first glance, but actually follow patterns in the corpus. Specially interesting are phonaesthemes. Used distributional models to confirm local phono semantic hypotheses. The mapping is found using supervised learning, non-parametric kernel regression, in particular.
+    //todo:read
 
 - [On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems](https://www.aclweb.org/anthology/P/P16/P16-1230.pdf)
     * Pei-Hao Su, Milica Gasic, Nikola Mrkšić, Lina M. Rojas Barahona, Stefan Ultes, David Vandyke, Tsung-Hsien Wen and Steve Young {WON best student paper award}
 
     Instead of just awarding static rewards, learn the rewards to associate with different methods.
+    // todo:read
 
 - [Globally Normalized Transition-Based Neural Networks](https://www.aclweb.org/anthology/P/P16/P16-1231.pdf)
     * Daniel Andor, Chris Alberti, David Weiss, Aliaksei Severyn, Alessandro Presta, Kuzman Ganchev, Slav Petrov and Michael Collins
 
     Feed-forward nets with global normalization obviate the need for looking forward into the rest of the sentence(dump the buffer).
+    // todo:read
 
 ### Life-time Achievement Award : Joan Bresnan
 
@@ -206,27 +223,28 @@ At the end of the day, I snuck into the open discussion at the Word Vector evalu
 
 ---
 
-# Some talks I missed out on:
+## Some talks I missed out on:
 
 - [Simple and Accurate Dependency Parsing Using Bidirectional LSTM Feature Representations](http://arxiv.org/pdf/1603.04351.pdf)
     * Eliyahu Kiperwasser and Yoav Goldberg
 
-    Bilstm for features of words, then mlp of head/modifier to score possible dependency attachment.  MST on top.  Also used in greedy incremental parsing. Nice results.
+    Bi-LSTM for features of words, then mlp of head/modifier to score possible dependency attachment.  MST on top.  Also used in greedy incremental parsing. Nice results.
+//todo:read
 
 - [Stack-propagation: Improved Representation Learning for Syntax](http://www.aclweb.org/anthology/P/P16/P16-1147.pdf)
     * Yuan Zhang and David Weiss
     
     Could imagine this being useful in syntax/semantics models (they applied it to POS/syntax).
+//todo:read
 
 - [Document-level Sentiment Inference with Social, Faction, and Discourse Context](http://www.aclweb.org/anthology/P/P16/P16-1032.pdf)
     * Hannah Rashkin and Sameer Singh and Yejin Choi
-
     //todo: need to check out
 
-# What’s on my reading list:
+## What’s on my reading list:
 
-1. dkjfldf
-2. jfdljfjdf
-44. jfldjf;lkdjf
+1. goldberg
+2. weiss
+44. rashkin?
 
-I also tweeted a bunch during the conference, and got retweeted by Hal Daumé  ! [Here is his own blog post](http://nlpers.blogspot.in/2016/08/some-papers-i-liked-at-acl-2016.html) about the ACL talks he liked.
+I tweeted a bunch during the conference, and also got retweeted by Hal Daumé! [Here is his own blog post](http://nlpers.blogspot.in/2016/08/some-papers-i-liked-at-acl-2016.html) about the ACL talks he liked.
