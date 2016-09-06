@@ -1,48 +1,48 @@
+<!--
 ---
 layout: post
 title:  "ACL in Berlin"
 date:   2016-08-20 14:55:35 -0700
 categories: jekyll update
 ---
+-->
 
+I had a great time at ACL this year. Though there were too many parallel sessions at times and I had to take some time out to work on my own talk, I managed to attend many of the sessions. In this post, I've summarized my notes on the various talks I got to see.
 
-The ACL this year was great. Though there were too many parallel sessions at times and though I had to spend some time preparing/changing my own talk, I still managed to attend some really great talks.
+Distributional semantics continued to be the overarching themes. Reinforcement learning is quickly gaining interest too. But this could be a biased opinion, and rather incomprehensive, based on the sessions and talks I attended.
 
-Overarching themes: Distributional semantics was a big thing this year. This could be subjective, based on the sessions and talks I attended.
-
-Finally, this ACL was a strong indicator that the community is thinking about gender diversity. We’re lucky as NLP researchers to have more women interested, but there are still milestones to achieve. ACL encouraged a lot of women speakers. I met a lot of great women in NLP - Sharon Goldwater, Emily Bender, Animashree Anandkumar and had one of the best brainstorming sessions with Yejin Choi. Personally, it makes a big difference to me when I see these great women, because I can relate to them and it reaffirms my faith in my own decision to join this field. It was so fun watching them nerd out about their favorite topics(something I kind of miss about CMU, everyone is always nerding  it out).
 
 ---
 
 ## Day 1 : 8th Aug
 
-### Keynote Talk 1: Amber Boydstun
+### Keynote Talk 1: Same Policy Issue, Different Portrayal: The Importance of Tone and Framing in Language
 
-Framing in politics and statistical analysis of change in public opinion based on agenda-driven speech. The challenge presented to the NLP audience was the following: can we automatically detect these trends? Got me thinking - we are barely scratching the surface of what can be potentially useful applications for humanity as a whole. So much potential for NLP, yay for the future.
+#### Amber Boydstun
+
+The same political issue could be framed in different ways, influencing public opinion. The speaker showed some cool statistical analyses that strengthened her theory. The challenge presented to the NLP audience was the following: can we automatically detect when there is framing and where on the political spectrum does the agenda-driven speech lie? In my opinion, this is still a very, very difficult NLP problem - we are barely scratching the surface of what can be potentially useful applications for society. This is good news - we are not going to be out of jobs anytime soon, yay!
 
 ### Session 1
 
 * [Noise reduction and targeted exploration in imitation learning for Abstract Meaning Representation parsing](https://aclweb.org/anthology/P/P16/P16-1001.pdf)
     - James Goodman, Andreas Vlachos and Jason Naradowsky
 
-    Explained the concepts behind roll-in and roll-out. Glad they selected AMR parsing. SEARN and DAgger-style algorithms for doing similar kinds of search during training and testing. // todo:read
+    Suggested improvements to an existing transition-based approach to AMR parsing, which is prone to error propagation, especially if a greedy decoding method is employed. In particular, a DAgger-style imitation learning algorithm is used, which augments the training sample with examples that the parser is more likely to see at test time. Noise reduction is achieved through an alpha-bound on the training examples which are worth selecting. Targeted exploration involves taking into account the uncertainty of the imitation learner. Concepts of RollIn (ask the dynamic expert whether you are in error state) and RollOut (ask the dynamic expert whether the previous action was good) are defined for the DAgger-style algorithm. Results comparable to state-of-the-art. Really liked this one.
 
 * [Generalized Transition-based Dependency Parsing via Control Parameters](https://www.aclweb.org/anthology/P/P16/P16-1015.pdf)
-    - Bernd Bohnet, Ryan McDonald, Emily Pitler and Ji Ma
+   - Bernd Bohnet, Ryan McDonald, Emily Pitler and Ji Ma
 
-    Completely blanking out on this talk. //todo:read
+    Introduction of soft constraints on the transition sequences in a generalized transition-based parsing set up. The soft constraints are in terms of control parameters for transitions. In addition to unprocessed and operative (stack) tokens, active tokens are maintained. Global control parameters dictate system-wide behavior and transition control parameters, as the name suggests, are transition-specific. Applicability to various transition systems is demonstrated theoretically. Empirical comparison between some of the popular transition systems is provided, easy-first proving to be the best. I liked the motivation behind this, not sure if the idea itself is simple or worthwhile to implement, need to read the paper to figure out.
 
 * [Learning the Curriculum with Bayesian Optimization for Task-Specific Word Representation Learning](https://www.aclweb.org/anthology/P/P16/P16-1013.pdf)
     - Yulia Tsvetkov, Manaal Faruqui, Wang Ling, Brian MacWhinney and Chris Dyer
 
-    Instead of having a random order of examples, learn the best order from samples provided. This is curriculum learning, where the curriculum is controlled by specific hyper parameters, which are learnt using Bayesian optimization. They demonstrate results on multiple tasks, including parsing, which is cool and not seen so often.
-    // todo:abstract+intro
+    This one was about curriculum learning, where instead of training  on the natural corpus order of examples, the best order (curriculum) is learnt from samples provided. The curriculum is controlled by hyper parameters, which are learnt using Bayesian optimization. Curriculum learning was used here to learn word representations, and the learnt embeddings were tested out on multiple downstream tasks (hear, hear!), including dependency parsing, sentiment analysis, NER, etc. What's not immediately obvious, but interesting, is the large improvement over a random order of traning examples. Many friends on this paper, regardless of which I liked this one :) 
 
 * [Named Entity Recognition with Bidirectional LSTM-CNNs](http://arxiv.org/abs/1511.08308) (TACL)
     - Jason P.C. Chiu and Eric Nichols
 
-    Boring.
-    // todo:abstract+intro
+    Feature engineering for NER is claimed to have been replaced by learning a hybrid LSTM  + ConvNet architecture. Results are demonstrated on a CoNLL 2003 shared task - they're good! In spirit, this is very similar to my own paper - unfortunately though, the talk heavily emphasized the engineering in the work and failed to hold my attention...
 
 ### Session 2
 
@@ -239,10 +239,14 @@ At the end of the day, I snuck into the open discussion at the Word Vector evalu
     * Hannah Rashkin and Sameer Singh and Yejin Choi
     //todo: need to check out
 
-## What’s on my reading list:
 
-1. goldberg
-2. weiss
-44. rashkin?
+## On my reading list:
+
+- [Noise reduction and targeted exploration in imitation learning for Abstract       Meaning Representation parsing](https://aclweb.org/anthology/P/P16/P16-1001.pdf)
+- [Generalized Transition-based Dependency Parsing via Control Parameters](https://  www.aclweb.org/anthology/P/P16/P16-1015.pdf)
+- [Stack-propagation: Improved Representation Learning for Syntax](http://www.aclweb.org/anthology/P/P16/P16-1147.pdf)
+- [Simple and Accurate Dependency Parsing Using Bidirectional LSTM Feature           Representations](http://arxiv.org/pdf/1603.04351.pdf)
+
+One cool thing I've got to mention is that ACL this year was a strong indicator that the community is thinking about gender diversity. We’re lucky to have a fair amount of female NLP researchers, compared to other areas in Computer Science. However, there are still milestones to achieve. ACL encouraged a lot of women speakers. I met a lot of cool researchers - Sharon Goldwater, Emily Bender, Animashree Anandkumar and had one of the best brainstorming sessions with Yejin Choi. It makes a big difference to me seeing successful women in the field - I can relate to them and it reaffirms my faith in my own decision to pursue NLP. It was total fun hearing them nerd out about their research (something I kind of miss about CMU, everyone was always nerding it out).
 
 I tweeted a bunch during the conference, and also got retweeted by Hal Daumé! [Here is his own blog post](http://nlpers.blogspot.in/2016/08/some-papers-i-liked-at-acl-2016.html) about the ACL talks he liked.
