@@ -47,15 +47,17 @@ The same political issue could be framed in different ways, influencing public o
 - [Active Learning for Dependency Parsing with Partial Annotation](http://www.aclweb.org/anthology/P/P16/P16-1033.pdf)
     * Zhenghua Li, Min Zhang, Yue Zhang, Zhanyi Liu, Wenliang Chen, Hua Wu and Haifeng Wang
 
-- [Morpho-syntactic Lexicon Generation Using Graph-based Semi-supervised Learning]() (TACL)
+    Dependency treebanking based on partial annotation. The active learning framework allows to manually annotate only the most uncertain words in each iteration. The uncertainty estimates come from a probabilistic CRF-based model. The partial trees obtained from the partial annotation are converted into a forest. A forest-based training objective is minimized to learn the parameters. Interesting, but will need to carefully read the paper to understand the methodology and figure out how thorough the experiements that compared partial to full annotation were. 
+
+- [Morpho-syntactic Lexicon Generation Using Graph-based Semi-supervised Learning](https://transacl.org/ojs/index.php/tacl/article/download/730/166) (TACL)
     * Manaal Faruqui, Ryan McDonald and Radu Soricut
 
-    Started with a small sample lexicon and extended it to a large corpus using projection. Seems practically useful.
+    Method to automatically extend a small sample morpho-syntactic lexicon to a large corpus using label propagation, Google-style. The twist is a featurized projection, instead of edge-wise label propagation. Though the approach is monolingual, they did it for eleven languages. Seems practically useful for lexical distributional semantics. Experimental results on the downstream task of dependency parsing are good. A general approach that exploits cross-lingual resources seems a lot more exciting and a great direction for future work.
 
 - [News Citation Recommendation with Implicit and Explicit Semantics](http://www.aclweb.org/anthology/P/P16/P16-1037.pdf)
     * Hao Peng, Jing Liu and Chin-Yew Lin
 
-    Went to check out the newest ARK member, he seems to be doing very well, he’s prepared for what’s to come!
+    Talk by our newest ARK member! It's a new task which involves providing recommendations to authors of news articles the relevant citations they must include. Authorship disambiguation is facilitated through grounding the entities, as well as word embeddings for topic-based author information. As is norm for recommendation systems, this is a reranking task exploiting well known similarity metrics.
 
 - [Document-level Sentiment Inference with Social, Faction, and Discourse Context](http://www.aclweb.org/anthology/P/P16/P16-1029.pdf)
     * Eunsol Choi, Hannah Rashkin, Luke Zettlemoyer and Yejin Choi
@@ -67,7 +69,7 @@ The same political issue could be framed in different ways, influencing public o
 - [Multilingual Projection for Parsing Truly Low-Resource Languages](https://transacl.org/ojs/index.php/tacl/article/viewFile/869/197) (TACL)
     * Željko Agić, Anders Johannsen, Barbara Plank, Héctor Martínez Alonso, Natalie Schluter and Anders Søgaard
 
-    The selling point of this paper was the usage of ``truly'' low-resource languages, instead of ``cozy'' languages, which are really still Indo-European (wonder if Emily Bender is convinced).  In fact, they need multi-parallel data, which also contains the low-resource language, limiting their options to Bible text. Same style of annotation projection as was used by Dipanjan and colleagues at Google, is employed, but more robust noise reduction techniques are employed (edge scores are projected instead of edges).
+    The selling point of this paper was the usage of "truly" low-resource languages, instead of "cozy" languages, which are really still Indo-European (wonder if Emily Bender is convinced).  In fact, they need multi-parallel data, which also contains the low-resource language, limiting their options to Bible text. Same style of annotation projection as was used by Dipanjan and colleagues at Google, is employed, but more robust noise reduction techniques are employed (edge scores are projected instead of edges).
 
 - [Combining Natural Logic and Shallow Reasoning for Question Answering](http://www.aclweb.org/anthology/P/P16/P16-1042.pdf)
     * Gabor Angeli, Neha Nayak and Christopher D. Manning
@@ -95,9 +97,9 @@ The same political issue could be framed in different ways, influencing public o
 
 ### Keynote talk 2: Mark Steedman
 
-Collocational vs denotational paradigms of distributional semantics.
-Collocational semantics is what word vectors are all about.
-Denotational semantics equates to logical semantics, building knowledge graphs, etc.
+This talk was about what the speaker classified as collocational vs denotational paradigms of distributional semantics. Collocational semantics is what word vectors are all about. Denotational semantics equates to logical semantics, building knowledge graphs, etc.
+
+The speaker went over a lot of history of distributional sematics, and situated his own body work in the whole scheme of things. Lots of linguistic examples were provided.
 
 ---
 
@@ -156,11 +158,32 @@ I'm a little lost on what the ultimate gist was. There was a discussion at lengt
 
 #### Animashree Anandkumar
 
-Properties which do not hold in two dimensions, hold in three. Non-convex optimization.
+The speaker emphasized on the greater challenge in the learning of representations of sentences, as compared to words. Some previously used methods and their weaknesses were first described, such as compositional models and paragraph vectors - these do not incorporate word ordering and need supervision. Skip-thought vectors for sentence embeddings (like skip-gram is for words) are better since they are unsupervised, but need collection of sentences, not just a single sentence. Convolutional models for sentence embeddings incorporate word vectors, but are supervised. The speaker's own work also deal with convolutional models for sentence embeddings, but make them unsupervised, and hence difficult to train.
+
+The biggest problem here is nonconvex optimization (still in an alternating minimization algorithm), which comes with saddle points and the lack of good stopping criteria. Here comes tensor decompostion to the rescue - properties which do not hold in two dimensions, hold in three, so use tensors now. Singular value decomposition is not necessarily unique for matrices, but is for tensors. All you have to do is stack your matrices and form tensors.
+The estimation will now involve higher-order moment-based methods and spectral learning.
+
+Not only is this method fast, but also comes with convergence guarantees. Other applications: Visual QA; Topic Models; Image Caption generation. Spectral methods can also be used for POMDPs in a reinforcement learning framework.
+
+Super cool talk, made me want to revisit my convex optimization class notes!
 
 ### Keynote Talk 5: Learning representations
 
 #### Hal Daumé III
+
+This talk was about learning representations of characters, phones, words and structured outputs. All our representation learning was in the form of linear models till some time back.
+
+Languages are different - so can provide supervision for each other. According to Hal, input/output correlation is overrated.
+
+Transliteration uses IPAs to learn embeddings and then do matches across languages. There are different pronunciation systems across languages. Also true for other tasks - translation is not exact. How then should we tie languages? Proposed solution: let their pronunciations be close but not exactly the same, because languages bring in different information. A joint minimization over both words, such that there is a small wiggle room allowing them to be different, works much better than regular input-output pairing. This is generally good advice for multilingual models across any task.
+
+Speaking of structured prediction, Hal suggested the following: instead of combined features of input and output, have separate feature vectors for both and then minimize the Euclidean distance between input and output feature vectors with some margin. The separate representation learning would help.
+
+He then spoke about incremental prediction and imitation learning. He used some cognitive sciencey motivation : a rather heartless experiment done in the past using a kitten with  a full view and another with a constrained view. Obviously the former kitten learns more about the world.
+
+He finally talked about some ongoing work on imitation learning with neural nets (no backprop). The unpublished dependency parsing results are 1% better than a strong baseline. Backdrop through time changes the story though. Hal trolled us a little bit by saying they are using LSTMs and embeddings and SGD and Adagrad, and then said he was kidding - they are really just using CCA.
+
+It was a great talk, as expected. I'm going to remember the wiggle room bit, reminds me of Kevin Gimpel's work on loss functions. Also, very ridiculously, someone stepped on the stage in the middle of the talk, with the statement that infinity is the answer :P
 
 ### CoNLL
 
@@ -170,7 +193,9 @@ The actual thing I was supposed to attend.
 
 #### Fernanda Ferreira
 
-Fascinating talk. I’m a big sucker for anything involving language and human psychology - so I was on the edge of the seat for this one. 
+Humans are obviously the best parsers, so much so that our brains are wired to account for disfluency, even before it occurs. We definitely parse language left to right, we don't necessarily always build trees bottom up. 
+
+Fascinating talk! I’m a big sucker for anything involving language and human psychology - so I was on the edge of the seat for this one. 
 
 ---
 
@@ -239,6 +264,7 @@ At the end of the day, I snuck into the open discussion at the Word Vector evalu
 
 - [Noise reduction and targeted exploration in imitation learning for Abstract       Meaning Representation parsing](https://aclweb.org/anthology/P/P16/P16-1001.pdf)
 - [Generalized Transition-based Dependency Parsing via Control Parameters](https://  www.aclweb.org/anthology/P/P16/P16-1015.pdf)
+- [Active Learning for Dependency Parsing with Partial Annotation](http://www.aclweb.org/     anthology/P/P16/P16-1033.pdf)
 - [Stack-propagation: Improved Representation Learning for Syntax](http://www.aclweb.org/anthology/P/P16/P16-1147.pdf)
 - [Simple and Accurate Dependency Parsing Using Bidirectional LSTM Feature           Representations](http://arxiv.org/pdf/1603.04351.pdf)
 
