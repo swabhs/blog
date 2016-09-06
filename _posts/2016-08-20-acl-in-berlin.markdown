@@ -47,58 +47,47 @@ The same political issue could be framed in different ways, influencing public o
 - [Active Learning for Dependency Parsing with Partial Annotation](http://www.aclweb.org/anthology/P/P16/P16-1033.pdf)
     * Zhenghua Li, Min Zhang, Yue Zhang, Zhanyi Liu, Wenliang Chen, Hua Wu and Haifeng Wang
 
-    Blanking out on this one.
-    // todo:abstract+intro
-
 - [Morpho-syntactic Lexicon Generation Using Graph-based Semi-supervised Learning]() (TACL)
     * Manaal Faruqui, Ryan McDonald and Radu Soricut
 
     Started with a small sample lexicon and extended it to a large corpus using projection. Seems practically useful.
-    // todo:abstract+intro
 
 - [News Citation Recommendation with Implicit and Explicit Semantics](http://www.aclweb.org/anthology/P/P16/P16-1037.pdf)
     * Hao Peng, Jing Liu and Chin-Yew Lin
 
     Went to check out the newest ARK member, he seems to be doing very well, he’s prepared for what’s to come!
-    // todo:abstract+intro
 
 - [Document-level Sentiment Inference with Social, Faction, and Discourse Context](http://www.aclweb.org/anthology/P/P16/P16-1029.pdf)
     * Eunsol Choi, Hannah Rashkin, Luke Zettlemoyer and Yejin Choi
 
     Theories about relationships between entities, like friends of enemies are enemies, were empirically justified from text data. Involved complex annotation schemes and guidelines (I annotated!)
-    // todo:abstract+intro
 
 ### Session 3
 
-- [Multilingual Projection for Parsing Truly Low-Resource Languages]() (TACL)
+- [Multilingual Projection for Parsing Truly Low-Resource Languages](https://transacl.org/ojs/index.php/tacl/article/viewFile/869/197) (TACL)
     * Željko Agić, Anders Johannsen, Barbara Plank, Héctor Martínez Alonso, Natalie Schluter and Anders Søgaard
 
-    Same style of projection as was used by Dipanjan and others at Google.
-    // todo:abstract+intro
+    The selling point of this paper was the usage of ``truly'' low-resource languages, instead of ``cozy'' languages, which are really still Indo-European (wonder if Emily Bender is convinced).  In fact, they need multi-parallel data, which also contains the low-resource language, limiting their options to Bible text. Same style of annotation projection as was used by Dipanjan and colleagues at Google, is employed, but more robust noise reduction techniques are employed (edge scores are projected instead of edges).
 
 - [Combining Natural Logic and Shallow Reasoning for Question Answering](http://www.aclweb.org/anthology/P/P16/P16-1042.pdf)
     * Gabor Angeli, Neha Nayak and Christopher D. Manning
 
-    clever trick which he proved using a sample logic puzzle, nice talk
-    // todo:abstract+intro
+    Broad-coverage and high-precision techniques are combined for question answering. Relational entailment and meronymy are incorporated into the natural logic framework to support the shallow lexical methods. The talk demonstrated a clever trick using a sample logic puzzle. The Stanford NaturalLI framework is used for experiments, a new evaluation methodology is introduced.
 
-- [Many Languages, One Parser]() (TACL)
+- [Many Languages, One Parser](https://transacl.org/ojs/index.php/tacl/article/view/892/207) (TACL)
     * Waleed Ammar, George Mulcaire, Miguel Ballesteros, Chris Dyer and Noah A. Smith
 
-    may be not really low resource, as per Emily Bender
-    // todo:abstract+intro
+    As the title suggests, a single parsing model was used for twelve different languages, some low-resource, exploiting linguistic and typological universals (may not be that low-resource, especially after Agić talk). The approach relies on multilingual word embeddings as well as dealt with the currently trending problem of language identification. This paper was from our research group, Waleed always has fun slides :)
 
-- [Unsupervised Part-Of-Speech Tagging with Anchor Hidden Markov Models]() (TACL)
+- [Unsupervised Part-Of-Speech Tagging with Anchor Hidden Markov Models](http://www.cs.columbia.edu/~djhsu/papers/poshmm-tacl.pdf) (TACL)
     * Karl Stratos, Michael Collins and Daniel Hsu
 
-    anchor HMMs, good but do the properties generalize?
-    //todo:read
+    Anchor HMMs are HMMs that assume for every tag at least one word that is always associated with that tag only. In some sense, this structurally restricts the HMM, but then again comes with performance guarantees. However, it wasn't clear if  the properties generalize. Anchor HMMs were applied to unsupervised POS tagging in the non-negative matrix factorization framework by Arora, and resulted in a consistent estimator. Again, I'm partial to this paper because it has friends. Regardless, it improves something as basic as HMMs for POS tagging, all the while using this very agreeable anchor assumption - how can one not like it?
 
-- [Multi-lingual dependency parsing evaluation: a large-scale analysis of word order properties using artificial datai]() (TACL)
+- [Multi-lingual dependency parsing evaluation: a large-scale analysis of word order properties using artificial data](https://transacl.org/ojs/index.php/tacl/article/viewFile/870/201) (TACL)
     * Kristina Gulordava and Paola Merlo
 
-    the talk was painful to watch
-    // todo:abstract+intro
+    Multlingual treebank properties versus linguistic properties are analyzed. Artificial treebanks are generated by manipulating word orders, the motivation being to test how the treebank properties hold, with different linguistic properties (a different language). One of the tricks used to generate an artificial language was changing the sentence to minimize the dependency lengths, resulting in word order permutations. Parsing performance was analyzed post these permutations - word order variability most negatively affected the same. Cool idea, the talk was very difficult to follow, though.
 
 ---
 
@@ -107,7 +96,6 @@ The same political issue could be framed in different ways, influencing public o
 ### Keynote talk 2: Mark Steedman
 
 Collocational vs denotational paradigms of distributional semantics.
-
 Collocational semantics is what word vectors are all about.
 Denotational semantics equates to logical semantics, building knowledge graphs, etc.
 
@@ -120,36 +108,31 @@ Denotational semantics equates to logical semantics, building knowledge graphs, 
 - [A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task](http://www.aclweb.org/anthology/P/P16/P16-1223.pdf)
     * Danqi Chen, Jason Bolton and Christopher D. Manning
 
-    Simple methods for reading comprehension work, so the work involved detailed analysis of the dataset to show patterns in the data that kind of undermine the task.
-    // todo:abstract+intro
+    Simple methods for reading comprehension work, so the work involved detailed analysis of the dataset to show patterns in the data that kind of showed that the task had fundamental problems, and could not be solved any better.
 
 - [Learning Language Games through Interaction](http://www.aclweb.org/anthology/P/P16/P16-1224.pdf)
     * Sida I. Wang, Percy Liang and Christopher D. Manning
 
     Learn from interaction rather than supervision. Outlined the necessity of better user interaction to teach machines well, the users who gave consistent commands taught the systems better, even if it was not in a real language.
-    // todo:abstract+intro
 
 - [Finding Non-Arbitrary Form-Meaning Systematicity Using String-Metric Learning for Kernel Regression](http://www.aclweb.org/anthology/P/P16/P16-1225.pdf)
     * E.Dario Gutierrez, Roger Levy and Benjamin Bergen {WON best paper award}
 
     Correlations between word meaning and word form. These seem arbitrary at first glance, but actually follow patterns in the corpus. Specially interesting are phonaesthemes. Used distributional models to confirm local phono semantic hypotheses. The mapping is found using supervised learning, non-parametric kernel regression, in particular.
-    //todo:read
 
 - [On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems](https://www.aclweb.org/anthology/P/P16/P16-1230.pdf)
     * Pei-Hao Su, Milica Gasic, Nikola Mrkšić, Lina M. Rojas Barahona, Stefan Ultes, David Vandyke, Tsung-Hsien Wen and Steve Young {WON best student paper award}
 
     Instead of just awarding static rewards, learn the rewards to associate with different methods.
-    // todo:read
 
 - [Globally Normalized Transition-Based Neural Networks](https://www.aclweb.org/anthology/P/P16/P16-1231.pdf)
     * Daniel Andor, Chris Alberti, David Weiss, Aliaksei Severyn, Alessandro Presta, Kuzman Ganchev, Slav Petrov and Michael Collins
 
     Feed-forward nets with global normalization obviate the need for looking forward into the rest of the sentence(dump the buffer).
-    // todo:read
 
 ### Life-time Achievement Award : Joan Bresnan
 
-She invented Lexical Functional Grammars. Used a garden - bush analogy, not my favorite, but whatever! Cutely nerded out about Bantu languages. Garden to bush- not my favorite analogy, but anyway. Answered a question saying “I don’t know” - so much easier to admit than to go around the bush. Snubbed Jason Eisner, it was hilarious. Her talk outlined how statistical methods became mainstream in linguistics
+She invented Lexical Functional Grammars. Used a garden - bush analogy, not my favorite, but whatever! Cutely nerded out about Bantu languages. Garden to bush- not my favorite analogy, but anyway. Answered a question saying “I don’t know” - so much easier to admit than to go around the bush. She didn't recognize an older Jason Eisner, it was funnily endearing. Her talk historically outlined how statistical methods became mainstream in linguistics.
 
 ---
 
@@ -159,33 +142,46 @@ She invented Lexical Functional Grammars. Used a garden - bush analogy, not my f
 
 Snuck into this one for the excellent line-up of keynote talks
 
-### Keynote Talk 3: Katrin Erk
+### Keynote Talk 3: Formal and distributional semantics
+
+#### Katrin Erk
+
+The talk was about representation learning for single document understanding. Montague meets Markov: first-order logic and Markov logic networks were emphasized. Probabilistic inference for undirected graphical models was discussed - network size is the limiting issue. The speaker was strongly in favor of this paradigm of representation learning.
+
+There was also a discussion on textual entailment. She encouraged the audience to question if a paraphrase is in the context of the current document or a true paraphrase. Rare events and one-shot learning for lexical semantics, with a concern for overfitting, were also discussed.
+
+I'm a little lost on what the ultimate gist was. There was a discussion at length on first-order logic, in the question-answering session.
 
 ### Keynote Talk 4: Tensor decompositions to learn sentence embeddings
-[Animashree Anandkumar]
+
+#### Animashree Anandkumar
 
 Properties which do not hold in two dimensions, hold in three. Non-convex optimization.
 
 ### Keynote Talk 5: Learning representations
-[Hal Daumé III]
+
+#### Hal Daumé III
 
 ### CoNLL
 
 The actual thing I was supposed to attend.
 
 ### Keynote Talk 6: Disfluency detection by humans
-[Fernanda Ferreira]
 
-Fascinating talk. I’m a big sucker for anything involving language and human psychology - so I was on the edge of the seat for this one. I even managed to embarrass myself - I went up to the speaker after her talk and started rambling about how this could be an argument in favor of left to right parsers
+#### Fernanda Ferreira
+
+Fascinating talk. I’m a big sucker for anything involving language and human psychology - so I was on the edge of the seat for this one. 
 
 ---
 
 ## Day 5: 11th Aug
 
 ### Keynote Talk 7: RNNaissance
-[Jürgen Schmidhuber]
 
-Grand talk, started with a history of neural nets and the LSTM, cited a lot of previous work and ended with grand promises of artificial intelligence leading to singularity 😃 Interestingly, the name long short-term memory comes from biological short-term memories.
+#### Jürgen Schmidhuber
+
+
+Grand talk, started with a history of neural nets and the LSTM (he was one of the inventors), cited a lot of previous work. The talk ended with grand promises for a future involving artificial intelligence exploring other planets, and even leading to singularity 😃 Interestingly, the name long short-term memory comes from biological short-term memories.
 
 <!--
 - [Exploring Prediction Uncertainty in Machine Translation Quality Estimation]()
@@ -224,18 +220,19 @@ At the end of the day, I snuck into the open discussion at the Word Vector evalu
 - [Simple and Accurate Dependency Parsing Using Bidirectional LSTM Feature Representations](http://arxiv.org/pdf/1603.04351.pdf)
     * Eliyahu Kiperwasser and Yoav Goldberg
 
+<!-- 
     Bi-LSTM for features of words, then mlp of head/modifier to score possible dependency attachment.  MST on top.  Also used in greedy incremental parsing. Nice results.
-//todo:read
+-->
 
 - [Stack-propagation: Improved Representation Learning for Syntax](http://www.aclweb.org/anthology/P/P16/P16-1147.pdf)
     * Yuan Zhang and David Weiss
     
+<!--    
     Could imagine this being useful in syntax/semantics models (they applied it to POS/syntax).
-//todo:read
+-->
 
 - [Document-level Sentiment Inference with Social, Faction, and Discourse Context](http://www.aclweb.org/anthology/P/P16/P16-1032.pdf)
     * Hannah Rashkin and Sameer Singh and Yejin Choi
-    //todo: need to check out
 
 
 ## On my reading list:
