@@ -40,7 +40,7 @@ The same political issue could be framed in different ways, influencing public o
 * [Named Entity Recognition with Bidirectional LSTM-CNNs](http://arxiv.org/abs/1511.08308) (TACL)
     - Jason P.C. Chiu and Eric Nichols
 
-    Feature engineering for NER is claimed to have been replaced by learning a hybrid LSTM  + ConvNet architecture. Results are demonstrated on a CoNLL 2003 shared task - they're good! In spirit, this is very similar to my own paper - unfortunately though, the talk heavily emphasized the engineering in the work and failed to hold my attention...
+    Feature engineering for NER is claimed to have been replaced by learning a hybrid LSTM  + ConvNet architecture. Results are demonstrated on a CoNLL 2003 shared task - they're good! In spirit, this is very similar to my own paper - unfortunately though, the talk heavily emphasized only on the engineering in the work.
 
 ### Session 2
 
@@ -99,7 +99,7 @@ The same political issue could be framed in different ways, influencing public o
 
 This talk was about what the speaker classified as collocational vs denotational paradigms of distributional semantics. Collocational semantics is what word vectors are all about. Denotational semantics equates to logical semantics, building knowledge graphs, etc.
 
-The speaker went over a lot of history of distributional sematics, and situated his own body work in the whole scheme of things. Lots of linguistic examples were provided.
+The speaker went over a lot of history of distributional sematics, and situated his own body work in the whole scheme of things. Lots of linguistic insights were provided, particularly why entailment is so important for natural language understanding..
 
 ---
 
@@ -110,12 +110,12 @@ The speaker went over a lot of history of distributional sematics, and situated 
 - [A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task](http://www.aclweb.org/anthology/P/P16/P16-1223.pdf)
     * Danqi Chen, Jason Bolton and Christopher D. Manning
 
-    Simple methods for reading comprehension work, so the work involved detailed analysis of the dataset to show patterns in the data that kind of showed that the task had fundamental problems, and could not be solved any better.
+    Simple methods for reading comprehension -- question answering about a missing entity. Involved a detailed analysis of the dataset to show patterns in the data. I loved the fact that they clearly showed that simple hyperparameter tuning improvement beat the Felix Hill baseline - proving that the task has fundamental problems, and can probably not be solved any better.
 
 - [Learning Language Games through Interaction](http://www.aclweb.org/anthology/P/P16/P16-1224.pdf)
     * Sida I. Wang, Percy Liang and Christopher D. Manning
 
-    Learn from interaction rather than supervision. Outlined the necessity of better user interaction to teach machines well, the users who gave consistent commands taught the systems better, even if it was not in a real language.
+    Cool task of playing an interactive language game between a human player and a computer. Outlined the necessity of better user interaction, as opposed to supervision, to teach machines better. Users who gave consistent commands taught the systems better, even if the commands were not in a real language. A semantic parser was trained, it used probabilistic feature-based mapping. The work showed the benefit of incorporating pragmatics.
 
 - [Finding Non-Arbitrary Form-Meaning Systematicity Using String-Metric Learning for Kernel Regression](http://www.aclweb.org/anthology/P/P16/P16-1225.pdf)
     * E.Dario Gutierrez, Roger Levy and Benjamin Bergen {WON best paper award}
@@ -130,7 +130,7 @@ The speaker went over a lot of history of distributional sematics, and situated 
 - [Globally Normalized Transition-Based Neural Networks](https://www.aclweb.org/anthology/P/P16/P16-1231.pdf)
     * Daniel Andor, Chris Alberti, David Weiss, Aliaksei Severyn, Alessandro Presta, Kuzman Ganchev, Slav Petrov and Michael Collins
 
-    Feed-forward nets with global normalization obviate the need for looking forward into the rest of the sentence(dump the buffer).
+    Feed-forward nets with global normalization obviate the need for looking forward into the rest of the sentence (dump the buffer). Happy that Google open sourced its code!
 
 ### Life-time Achievement Award : Joan Bresnan
 
@@ -142,7 +142,7 @@ She invented Lexical Functional Grammars. Used a garden - bush analogy, not my f
 
 ### Representation Learning Workshop 
 
-Snuck into this one for the excellent line-up of keynote talks
+Snuck into this one for the excellent line-up of keynote talks...
 
 ### Keynote Talk 3: Formal and distributional semantics
 
@@ -187,7 +187,7 @@ It was a great talk, as expected. I'm going to remember the wiggle room bit, rem
 
 ### CoNLL
 
-The actual thing I was supposed to attend.
+The actual thing I signed up to attend...
 
 ### Keynote Talk 6: Disfluency detection by humans
 
@@ -206,7 +206,7 @@ Fascinating talk! I’m a big sucker for anything involving language and human p
 #### Jürgen Schmidhuber
 
 
-Grand talk, started with a history of neural nets and the LSTM (he was one of the inventors), cited a lot of previous work. The talk ended with grand promises for a future involving artificial intelligence exploring other planets, and even leading to singularity 😃 Interestingly, the name long short-term memory comes from biological short-term memories.
+Grand talk, started with a history of neural nets and the LSTM (he was one of the inventors), cited a lot of previous work. The talk ended with promises for a future involving artificial intelligence exploring other planets, and even leading to singularity 😃  Interestingly, the name long short-term memory comes from biological short-term memories
 
 <!--
 - [Exploring Prediction Uncertainty in Machine Translation Quality Estimation]()
@@ -259,14 +259,17 @@ At the end of the day, I snuck into the open discussion at the Word Vector evalu
 - [Document-level Sentiment Inference with Social, Faction, and Discourse Context](http://www.aclweb.org/anthology/P/P16/P16-1032.pdf)
     * Hannah Rashkin and Sameer Singh and Yejin Choi
 
+- [Beyond Privacy: The Social Impact of Natural Language Processing](http://www.aclweb.org/anthology/P/P16/P16-2096.pdf)
+    * Dirk Hovy and Shannon L. Spruit
 
 ## On my reading list:
 
-- [Noise reduction and targeted exploration in imitation learning for Abstract       Meaning Representation parsing](https://aclweb.org/anthology/P/P16/P16-1001.pdf)
-- [Generalized Transition-based Dependency Parsing via Control Parameters](https://  www.aclweb.org/anthology/P/P16/P16-1015.pdf)
-- [Active Learning for Dependency Parsing with Partial Annotation](http://www.aclweb.org/     anthology/P/P16/P16-1033.pdf)
+- [Generalized Transition-based Dependency Parsing via Control Parameters](https://www.aclweb.org/anthology/P/P16/P16-1015.pdf)
+- [Active Learning for Dependency Parsing with Partial Annotation](http://www.aclweb.org/anthology/P/P16/P16-1033.pdf)
 - [Stack-propagation: Improved Representation Learning for Syntax](http://www.aclweb.org/anthology/P/P16/P16-1147.pdf)
-- [Simple and Accurate Dependency Parsing Using Bidirectional LSTM Feature           Representations](http://arxiv.org/pdf/1603.04351.pdf)
+- [Simple and Accurate Dependency Parsing Using Bidirectional LSTM Feature Representations](http://arxiv.org/pdf/1603.04351.pdf)
+- [Finding Non-Arbitrary Form-Meaning Systematicity Using String-Metric Learning for Kernel Regression](http://www.aclweb.org/anthology/P/P16/P16-1225.pdf)
+- [On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems](https://www.aclweb.org/anthology/P/P16/P16-1230.pdf)
 
 One cool thing I've got to mention is that ACL this year was a strong indicator that the community is thinking about gender diversity. We’re lucky to have a fair amount of female NLP researchers, compared to other areas in Computer Science. However, there are still milestones to achieve. ACL encouraged a lot of women speakers. I met a lot of cool researchers - Sharon Goldwater, Emily Bender, Animashree Anandkumar and had one of the best brainstorming sessions with Yejin Choi. It makes a big difference to me seeing successful women in the field - I can relate to them and it reaffirms my faith in my own decision to pursue NLP. It was total fun hearing them nerd out about their research (something I kind of miss about CMU, everyone was always nerding it out).
 
