@@ -2,7 +2,7 @@
 layout: post
 title:  "ACL in Berlin"
 date:   2016-08-20 14:55:35 -0700
-categories: jekyll update
+categories: blog conferences
 ---
 
 I had a great time at ACL this year. Though there were too many parallel sessions at times and I had to take some time out to work on my own talk, I managed to attend many of the sessions. In this post, I've summarized my notes on the various talks I got to see.

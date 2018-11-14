@@ -2,7 +2,7 @@
 layout: post
 title:  "Notes from EMNLP 2018 Brussels"
 date:   2018-11-03 04:55:35 -0700
-categories: jekyll update
+categories: blog conferences
 --- 
 
 My very brief notes from EMNLP 2018. 
