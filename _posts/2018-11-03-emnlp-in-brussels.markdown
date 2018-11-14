@@ -156,7 +156,8 @@ Compatible and incompatible
 
 - [Learning Neural Templates for Text Generation.](http://aclweb.org/anthology/D18-1356)
     *   Wiseman et. al.
-Unsupervised learning of “templates” which are latent structures given by hidden semi-Markov models
+
+    Unsupervised learning of “templates” which are latent structures given by hidden semi-Markov models
 
 - [Pathologies of Neural Models makes Interpretations Difficult](http://aclweb.org/anthology/D18-1407)
     *  Feng et. al.
