@@ -1,15 +1,16 @@
 ---
 layout: post
-title:  "EMNLP 2018 Brussels"
+title:  "Notes from EMNLP 2018 Brussels"
 date:   2018-11-03 04:55:35 -0700
 categories: jekyll update
 --- 
 
-Alert : self-selection bias!
+My very brief notes from EMNLP 2018. 
 
 ---
 
 ## Overall Trends
+_Note that this might be subject to some self-selection bias._
 
 1. Datasets abound (at least 25!)
     - QuAC, HotpotQA, MultiWoz, SWAG
@@ -36,32 +37,40 @@ Alert : self-selection bias!
 
 ## [BlackBox NLP](https://blackboxnlp.github.io/)
 
-- [Yoav Goldberg Keynote](http://u.cs.biu.ac.il/~yogo/blackbox2018.pdf)
+- [Keynote I](http://u.cs.biu.ac.il/~yogo/blackbox2018.pdf)
+    * Yoav Goldberg
 
     Nice summary of how different papers have over the years tried to interpret RNNs. Formal expressive power and connections to FSAs.
 
-- Leila Wehbe Keynote:
+- [Keynote II](http://www.phontron.com/slides/neubig18blackbox.pdf)
+    * Graham Neubig
+
+    Treat structure as latent in various RNN-based models.
+
+- [Keynote III]()
+    * Leila Wehbe
 
     Argued that we are studying a blackbox (human brain) with another blackbox (artificial neural nets). Study of brain activations with word embeddings.
 
-- Understanding Convolutional Neural Networks for Text Classification.
-    * Jacovi et. al.
+- [Understanding Convolutional Neural Networks for Text Classification.](http://aclweb.org/anthology/W18-5408)
+    *  Alon Jacovi | Oren Sar Shalom | Yoav Goldberg
 
     Filters + max-pooling = n-gram detectors
 
-- Language Models Learn POS First.
-    * Saphra et. al.
+- [Language Models Learn POS First.](http://aclweb.org/anthology/W18-5438)
+    * Naomi Saphra and Adam Lopez
 
-- Language Modeling Teaches You More than Translation Does: Lessons Learned Through Auxiliary Syntactic Task Analysis.
-    * Zhang et. al.
+- [Language Modeling Teaches You More than Translation Does: Lessons Learned Through Auxiliary Syntactic Task Analysis.](http://aclweb.org/anthology/W18-5448)
+    * Kelly Zhang | Samuel Bowman
 
-- Interpretable Structure Induction via Sparse Attention.
-    * Peters et. al.
+- [Interpretable Structure Induction via Sparse Attention.](http://aclweb.org/anthology/W18-5450)
+    * Ben Peters | Vlad Niculae | André F. T. Martins
 
     Sparse posteriors help learn a latent structure which helps interpretability
 
-- Under the Hood: Using Diagnostic Classifiers to Investigate and Improve how Language Models Track Agreement Information. [Best Paper]
-    * Giulianelli et. al.
+- [Under the Hood: Using Diagnostic Classifiers to Investigate and Improve how Language Models Track Agreement Information.](http://aclweb.org/anthology/W18-5426) 
+    * Mario Giulianelli | Jack Harding | Florian Mohnert | Dieuwke Hupkes | Willem Zuidema
+    * [Best Paper]
 
 - Terminology trend: “Diagnostic Classifiers”
 
@@ -78,8 +87,6 @@ Compatible and incompatible
 - Advanced:
     * Reparameterization for discrete LVs (Gumbel Softmax)
     * Tightening the lower bound: Flows and importance sampling.
-- [Graham Neubig talk in Blackbox NLP](http://www.phontron.com/slides/neubig18blackbox.pdf)
-    * Treat structure as latent in various RNN-based models.
 
 ---
 
@@ -137,7 +144,8 @@ Compatible and incompatible
 ---
 ## Other talks and papers I liked:
 
-- Johan Bos. Keynote.
+- [Keynote III]()
+    * Johan Bos
 
     Boxer: CCG-like semantic formalism. Understanding the semantics of translations. Neural vs classic models. Discussion of evaluation of models.
 
@@ -160,3 +168,6 @@ Unsupervised learning of “templates” which are latent structures given by hi
 - [Patrick Lewis](https://www.patricklewis.io/post/emnlp2018/)
 - [Sebastian Ruder](http://ruder.io/emnlp-2018-highlights/)
 - [Claudia Hauff](https://chauff.github.io/2018-11-04-emnlp/)
+
+
+I found Brussels super charming, but the ease of availability of chocolate is _extremely_ dangerous.
