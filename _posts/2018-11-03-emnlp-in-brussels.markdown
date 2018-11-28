@@ -92,10 +92,7 @@ Compatible and incompatible
 
 ## Variational Autoencoders are hot!
 
-- [Spherical Latent Spaces for Stable Variational Autoencoders.](http://aclweb.org/anthology/D18-1480)  
-    *  Xu & Durrett.
-
-    Preventing posterior collapse with Mises-Fisher distribution
+Other than in the tutorial above, variational autoencoders seem to have captured the NLP imagination. This EMNLP they featured in papers across different tasks, such as:
 
 - Generation: [Generating Classical Chinese Poems via Conditional Variational Autoencoder and Adversarial Training.](http://aclweb.org/anthology/D18-1423)
     * Li et. al.
@@ -109,11 +106,20 @@ Compatible and incompatible
 - Text Cat: [GraphBTM: Graph Enhanced Autoencoded Variational Inference for Biterm Topic Model.](http://aclweb.org/anthology/D18-1495)
     * Zhu et. al.
 
-- Script Generation: [Hierarchical Quantized Representations for Script Generation.](http://aclweb.org/anthology/D18-1413) 
-    * Weber et. al.  
+- Script Generation: [Hierarchical Quantized Representations for Script Generation.](http://aclweb.org/anthology/D18-1413)
+    * Noah Weber \| Leena Shekhar \| Niranjan Balasubramanian \| Nathanael Chambers
+
+    Script generation using hierarchical VAEs, using a quantization trick to allow for discrete latent variables. Evaluation as a language model, which apparently is the new trend. Training seems hard to get to work. Other approaches for dealing with a hierarchy of latent variables involve variance reduction, clustering-like feature maps. 
 
 - Coreference: [Variational Sequential Labelers for Semi-Supervised Learning.](http://aclweb.org/anthology/D18-1020) 
     * Chen et. al. 
+
+- In general: [Spherical Latent Spaces for Stable Variational Autoencoders.](http://aclweb.org/anthology/D18-1480)  
+    *  Xu & Durrett.
+
+    Preventing posterior collapse with Mises-Fisher distribution
+
+This list is obviously not comprehensive, I've only selected a representative sample from each area.
 
 ---
 ## Syntax is back (in SRL at least)!
@@ -180,6 +186,7 @@ Compatible and incompatible
     This results in training better representations, since the auxillaries are forced to make the same predictions as primary without seeing all the features.
     This is similar to a teacher-student network or distillation.
     Further improvements are observed using a multi-task learning setup, which results in much faster convergence.
+    Very careful experiments, loved the attention to detail in this paper.
 
 ## Other EMNLP Summaries:
 
