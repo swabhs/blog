@@ -53,18 +53,18 @@ _Note that this might be subject to some self-selection bias._
     Argued that we are studying a blackbox (human brain) with another blackbox (artificial neural nets). Study of brain activations with word embeddings.
 
 - [Understanding Convolutional Neural Networks for Text Classification.](http://aclweb.org/anthology/W18-5408)
-    *  Alon Jacovi \| Oren Sar Shalom \| Yoav Goldberg
+    *  Alon Jacovi \| Oren Sar Shalom \| Yoav Goldberg.
 
     Filters + max-pooling = n-gram detectors
 
 - [Language Models Learn POS First.](http://aclweb.org/anthology/W18-5438)
-    * Naomi Saphra and Adam Lopez
+    * Naomi Saphra \| Adam Lopez.
 
 - [Language Modeling Teaches You More than Translation Does: Lessons Learned Through Auxiliary Syntactic Task Analysis.](http://aclweb.org/anthology/W18-5448)
-    * Kelly Zhang \| Samuel Bowman
+    * Kelly Zhang \| Samuel Bowman.
 
 - [Interpretable Structure Induction via Sparse Attention.](http://aclweb.org/anthology/W18-5450)
-    * Ben Peters \| Vlad Niculae \| André F. T. Martins
+    * Ben Peters \| Vlad Niculae \| André F. T. Martins.
 
     Sparse posteriors help learn a latent structure which helps interpretability
 
@@ -107,7 +107,7 @@ Other than in the tutorial above, variational autoencoders seem to have captured
     * Zhu et. al.
 
 - Script Generation: [Hierarchical Quantized Representations for Script Generation.](http://aclweb.org/anthology/D18-1413)
-    * Noah Weber \| Leena Shekhar \| Niranjan Balasubramanian \| Nathanael Chambers
+    * Noah Weber \| Leena Shekhar \| Niranjan Balasubramanian \| Nathanael Chambers.
 
     Script generation using hierarchical VAEs, using a quantization trick to allow for discrete latent variables. Evaluation as a language model, which apparently is the new trend. Training seems hard to get to work. Other approaches for dealing with a hierarchy of latent variables involve variance reduction, clustering-like feature maps. 
 
@@ -115,7 +115,7 @@ Other than in the tutorial above, variational autoencoders seem to have captured
     * Chen et. al. 
 
 - In general: [Spherical Latent Spaces for Stable Variational Autoencoders.](http://aclweb.org/anthology/D18-1480)  
-    *  Xu & Durrett.
+    *  Xu \| Greg Durrett.
 
     Preventing posterior collapse with Mises-Fisher distribution
 
