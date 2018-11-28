@@ -3,9 +3,9 @@ layout: post
 title:  "Notes from EMNLP 2018 Brussels"
 date:   2018-11-03 04:55:35 -0700
 categories: blog conferences
---- 
+---
 
-My very brief notes from EMNLP 2018. 
+My very brief notes from EMNLP 2018.
 
 ---
 
@@ -31,7 +31,7 @@ _Note that this might be subject to some self-selection bias._
         * Lample et. al. [Best Paper] 
 5. Breaking / Replicating models
     - [How Much Reading Does Reading Comprehension Require? A Critical Investigation of Popular Benchmarks.](http://aclweb.org/anthology/D18-1546)
-        *  Kaushik & Lipton [Best Paper]
+        *  Kaushik \| Lipton [Best Paper]
 
 ---
 
@@ -53,7 +53,7 @@ _Note that this might be subject to some self-selection bias._
     Argued that we are studying a blackbox (human brain) with another blackbox (artificial neural nets). Study of brain activations with word embeddings.
 
 - [Understanding Convolutional Neural Networks for Text Classification.](http://aclweb.org/anthology/W18-5408)
-    *  Alon Jacovi | Oren Sar Shalom | Yoav Goldberg
+    *  Alon Jacovi \| Oren Sar Shalom \| Yoav Goldberg
 
     Filters + max-pooling = n-gram detectors
 
@@ -61,15 +61,15 @@ _Note that this might be subject to some self-selection bias._
     * Naomi Saphra and Adam Lopez
 
 - [Language Modeling Teaches You More than Translation Does: Lessons Learned Through Auxiliary Syntactic Task Analysis.](http://aclweb.org/anthology/W18-5448)
-    * Kelly Zhang | Samuel Bowman
+    * Kelly Zhang \| Samuel Bowman
 
 - [Interpretable Structure Induction via Sparse Attention.](http://aclweb.org/anthology/W18-5450)
-    * Ben Peters | Vlad Niculae | André F. T. Martins
+    * Ben Peters \| Vlad Niculae \| André F. T. Martins
 
     Sparse posteriors help learn a latent structure which helps interpretability
 
-- [Under the Hood: Using Diagnostic Classifiers to Investigate and Improve how Language Models Track Agreement Information.](http://aclweb.org/anthology/W18-5426) 
-    * Mario Giulianelli | Jack Harding | Florian Mohnert | Dieuwke Hupkes | Willem Zuidema
+- [Under the Hood: Using Diagnostic Classifiers to Investigate and Improve how Language Models Track Agreement Information.](http://aclweb.org/anthology/W18-5426)
+    * Mario Giulianelli \| Jack Harding \| Florian Mohnert \| Dieuwke Hupkes \| Willem Zuidema
     * [Best Paper]
 
 - Terminology trend: “Diagnostic Classifiers”
@@ -159,10 +159,27 @@ Compatible and incompatible
 
     Unsupervised learning of “templates” which are latent structures given by hidden semi-Markov models
 
+
+- [Targeted Syntactic Evaluation of Language Models](http://aclweb.org/anthology/D18-1151)
+    * Rebecca Marvin \| Tal Linzen
+
+    LSTMs might not be as good at capturing syntax, or grammaticality.
+
 - [Pathologies of Neural Models makes Interpretations Difficult](http://aclweb.org/anthology/D18-1407)
     *  Feng et. al.
 
     Removing “least important” words preserves neural model performance while being manually uninterpretable. Fine-tuning with high entropy with reduced data.
+
+- [Semi-Supervised Sequence Modeling with Cross-View Training](http://aclweb.org/anthology/D18-1217)
+    * Kevin Clark \| Minh-Thang Luong \| Christopher D. Manning \| Quoc V. Le
+
+    Learning contextualized represnetations via sequence modeling (as opposed to language modeling).
+    Fine-tuning as opposed to feature-based learning.
+    When supervision is present, use it to train primary modules.
+    When absent, make a prediction using a reduced view in an auxillary module, and minimize the KL divergence from the predicted primary module distribution.
+    This results in training better representations, since the auxillaries are forced to make the same predictions as primary without seeing all the features.
+    This is similar to a teacher-student network or distillation.
+    Further improvements are observed using a multi-task learning setup, which results in much faster convergence.
 
 ## Other EMNLP Summaries:
 
